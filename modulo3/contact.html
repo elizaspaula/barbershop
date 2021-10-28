@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Contato - Barbearia Alura</title>
+    <title>Contatc - Alura's Barbershop</title>
 
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
@@ -15,8 +15,8 @@
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Book Appointment</a></li>
           </ul>
         </nav>
       </div>
@@ -25,20 +25,20 @@
 
 <main>
   <form>
-    <label for="nomesobrenome" >Nome</label>
+    <label for="nomesobrenome" >Full Name</label>
     <input type="text" id="nomesobrenome" class="input-padrao" required >
     
     <label for="email">Email</label>
     <input type="email" id="email"  class="input-padrao" required placeholder="email@dominio.com">
     
-    <label for="telefone">Telefone</label>
+    <label for="telefone">Phone</label>
     <input type="tel" id="telefone" class="input-padrao" placeholder="(XX)XXXX-XXXX" required >
     
-    <label for="messagem">Messagem</label>
+    <label for="messagem">Message</label>
     <textarea col="70" rows="10" id="messagem" class="input-padrao" required >  </textarea>
 
     <fieldset>
-      <legend>Como prefere o nosso contato?</legend>
+      <legend>How to you prefer to be contacted?</legend>
       <label for="radio-email">
           <input type="radio" name="contato" value="email" id="radio-email">
           Email
@@ -46,7 +46,7 @@
   
       <label for="radio-telefone">
           <input type="radio" name="contato" value="telefone" id="radio-telefone"> 
-          Telefone
+          Phone
       </label>
   
       <label for="radio-whatsapp">
@@ -55,41 +55,49 @@
       </label>
   </fieldset>
   <fieldset>
-    <legend>Qual horario gostaria de ser atendido?</legend>
+    <legend>Time</legend>
     <select>
-      <option>Manha</option>
-      <option>Tarde</option>
-      <option>Noite</option>
+      <option>Morning</option>
+      <option>Afternoon</option>
+      <option>Night</option>
     </select>
   </fieldset>
 
   <label class="checkbox">
     <input type="checkbox"checked>
-    Gostaria de receber nossas novidades por email?
+    Would you like to receive our newsletter?
   </label>
     
     <input type="submit" value="Submit" class ="enviar">
   </form>
+  
 <table>
   <thead> 
     <tr>
-      <th>Dia</th>
-      <th>Horario</th>
+      <th colspan="2">Hours</th>
     </tr>
   </thead>
   
   <tbody>
     <tr>
-      <td>Segunda</td>
-      <td>8h-20h</td>
+      <td>Monday</td>
+      <td>10AM - 8PM</td>
     </tr>
     <tr>
-      <td>Terca</td>
-      <td>8h-20h</td>
+      <td>Tuesday</td>
+      <td>10AM - 8PM</td>
     </tr>      
     <tr>
-      <td>Quarta</td>
-      <td>8h-20h</td>
+      <td>Wednesday</td>
+      <td>10AM - 8PM</td>
+    </tr>
+    <tr>
+      <td>Thursday</td>
+      <td>10AM - 8PM</td>
+    </tr>
+    <tr>
+      <td>Friday</td>
+      <td>10AM - 8PM</td>
     </tr>
   </tbody>
 </table>
@@ -100,7 +108,7 @@
 
 <footer>
   <img src="logo-branco.png" alt="Logo da Barbearia Alura" />
-  <p class="copyright">&copy;Copyright Barbearia Alura - 2021</p>
+  <p class="copyright">&copy;Copyright Alura's Barbershop - 2021</p>
 </footer>
 </body>
 </html>
